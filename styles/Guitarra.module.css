@@ -1,0 +1,111 @@
+.guitarra{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 71.3rem;
+    margin: 0 auto;
+}
+
+.guitarra img{
+    transition-property: all;
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+}
+
+.guitarra img:hover{
+    transform: rotate(20deg) scale(80%);
+}
+
+.guitarra a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary);
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 500;
+
+    border: solid 2px var(--primary);
+
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.guitarra a:hover{
+    color: var(--blanco);
+    background-color: var(--primary);
+}
+
+.contenido{
+    padding: 1rem;
+}
+
+.contenido h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.descripcion{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+.precio{
+    color: var(--primary);
+    font-size: 6rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.formulario label{
+    display: block;
+}
+
+.formulario select{
+    margin-top: 1rem;
+    display: block;
+    border: 2px var(--primary) solid;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary);
+    cursor: pointer;
+    width: 100%;
+
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.formulario select:hover{
+    background-color: var(--primary);
+    outline: none;
+    color: var(--blanco);
+}
+
+.formulario input{
+    display: block;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border: 2px var(--primary) solid;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--primary);
+    width: 100%;
+    background-color: var(--blanco);
+
+    cursor: pointer;
+
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.formulario input:hover{
+    background-color: var(--primary);
+    color: var(--blanco);
+}
