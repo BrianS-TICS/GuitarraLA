@@ -52,11 +52,18 @@
     transition-property: background-color, transform;
     transition-duration: .2s;
     transition-timing-function: ease-in;
+    line-height: 2;
 }
 
 .navegacion a:hover {
     transform: scale(90%);
     background-color: var(--primary);
+}
+
+.simetria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modelo {

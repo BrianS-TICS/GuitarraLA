@@ -4,7 +4,6 @@ import Link from 'next/link';
 import styles from '../styles/Curso.module.css';
 
 const Curso = ({ curso }) => {
-    console.log(curso);
     const { titulo, contenido, imagen } = curso;
     return (
         <section>

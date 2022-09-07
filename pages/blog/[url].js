@@ -62,7 +62,6 @@ export async function getStaticProps({ params: { url } }) {
 //     const respuesta = await fetch(url);
 //     const entrada = await respuesta.json();
 
-//     console.log(entrada);
 //     return {
 //         props:{
 //             entrada

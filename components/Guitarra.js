@@ -4,7 +4,7 @@ import Link from 'next/link';
 import styles from '../styles/Guitarra.module.css'
 
 const Guitarra = ({guitarra}) => {
-
+    
     const {nombre, descripcion, imagen, precio, url} = guitarra;
 
     return (
