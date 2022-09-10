@@ -10,7 +10,6 @@ const Carrito = ({ carrito, actualizarCantidad, eliminarProducto }) => {
         if (carrito.length > 0) {
             const totalPedido = carrito.reduce((acumulacion, elemento) => acumulacion + (elemento.cantidad * elemento.precio),0);
 
-            console.log(total);
             setTotal(totalPedido);
         }
     }, [carrito])

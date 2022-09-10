@@ -25,20 +25,35 @@
     }
 }
 
-.barra nav {
+.barra .navegacion {
     margin-top: 5rem;
     display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
     justify-content: space-around;
-    gap: 1rem;
+    align-items: center;
 
     position: relative;
     z-index: 1;
+}
+
+.barra .navTienda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (min-width: 768px) {
     .barra nav {
         margin-top: 0;
     }
+
+    .barra .navegacion {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+
 }
 
 .navegacion a {
@@ -52,7 +67,7 @@
     transition-property: background-color, transform;
     transition-duration: .2s;
     transition-timing-function: ease-in;
-    line-height: 2;
+    line-height: normal;
 }
 
 .navegacion a:hover {

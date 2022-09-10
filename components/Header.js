@@ -19,15 +19,19 @@ const Header = ({ guitarra }) => {
                     </div>
 
                     <nav className={styles.navegacion}>
-                        <Link href="/">Inicio</Link>
-                        <Link href="/nosotros">Nosotros</Link>
-                        <Link href="/blog">Blog</Link>
-                        <Link href="/tienda">Tienda</Link>
-                        <Link href="/carrito">
-                            <a className={styles.simetria}>
-                                <Image layout="fixed" width={30} height={25} src="/img/carrito.png" alt="Imagen carrito" />
-                            </a>
-                        </Link>
+                        <div >
+                            <Link href="/">Inicio</Link>
+                            <Link href="/nosotros">Nosotros</Link>
+                            <Link href="/blog">Blog</Link>
+                        </div>
+                        <div className={styles.navTienda}>
+                                <Link href="/tienda">Tienda</Link>
+                                <Link href="/carrito">
+                                    <a className={styles.simetria}>
+                                        <Image layout="fixed" width={30} height={25} src="/img/carrito.png" alt="Imagen carrito" />
+                                    </a>
+                                </Link>
+                        </div>
                     </nav>
                 </div>
 
